@@ -20,7 +20,7 @@ const LoginPage = () => {
         if (isAuthenticated) {
             router.push("/dashboard");
         }
-    }, [isAuthenticated]);
+    }, [isAuthenticated,router]);
 
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();

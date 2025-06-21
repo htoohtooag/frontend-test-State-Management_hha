@@ -23,7 +23,7 @@ const Dashboard = () => {
         if (!isAuthenticated) {
             router.push("/login");
         }
-    }, [isAuthenticated]);
+    }, [isAuthenticated,router]);
 
     const dispatch = useDispatch();
     const { teams } = useSelector((state: RootState) => state.teamReducer);
